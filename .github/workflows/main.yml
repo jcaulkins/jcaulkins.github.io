@@ -6,7 +6,7 @@ on:
 
   schedule:
 
-    - cron: '* * * *'  # Runs every hour
+    - cron: '19 * * *'  # Runs every hour
 
 
 
