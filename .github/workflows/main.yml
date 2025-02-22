@@ -6,7 +6,7 @@ on:
 
   schedule:
 
-    - cron: '* * * *'  # Runs every hour
+    - cron: '0,10,20,30,40,50 * * *'  # Runs every 10 minutes
 
 
 
@@ -21,10 +21,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - run: python update_content.py
-
-      - run : git config user.name 'GitHub Actions Bot'
-
-      - run : git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
       - run : git add .
 
