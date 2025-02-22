@@ -3,10 +3,17 @@ name: Update Website
 
 
 on:
-
-  push:  # Runs every 10 minutes
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
 
 jobs:
