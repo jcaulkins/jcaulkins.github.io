@@ -21,10 +21,4 @@ jobs:
 
       - name: checking
 
-      - run: ls
-
-      - uses: actions/checkout@v3
-
-      - name: chekcing 2
-
-      - run: chmod +x update_daily.sh ./update_daily.sh >> log.txt
+      - run: echo ls >> log.txt
