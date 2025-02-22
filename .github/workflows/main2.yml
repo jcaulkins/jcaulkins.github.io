@@ -1,7 +1,5 @@
 name: Update Website 2
 
-
-
 on:
   workflow_dispatch:
     inputs:
