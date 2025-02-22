@@ -1,0 +1,22 @@
+name: Update Website
+
+
+
+on:
+
+  push:  # Runs every 10 minutes
+    branches:
+      - main
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - run: chmod +x update_daily.sh ./update_daily.sh >> log.txt
