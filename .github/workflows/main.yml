@@ -1,0 +1,33 @@
+name: Update Website
+
+
+
+on:
+
+  schedule:
+
+    - cron: '* * * *'  # Runs every hour
+
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - run: python update_content.py
+
+      - run : git config user.name 'GitHub Actions Bot'
+
+      - run : git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - run : git add .
+
+      - run : git commit -m "Automatic website update"
+
+      - run : git push origin HEAD:gh-pages
