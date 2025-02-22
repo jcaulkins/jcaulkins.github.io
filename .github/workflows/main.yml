@@ -18,6 +18,14 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-      - run: chmod +x update_daily.sh ./update_daily.sh >> log.txt
+    - name: checking
+
+    - run: ls
+
+    - uses: actions/checkout@v3
+
+    - name: chekcing 2
+
+    - run: chmod +x update_daily.sh ./update_daily.sh >> log.txt
