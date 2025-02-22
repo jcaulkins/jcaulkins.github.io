@@ -2,15 +2,12 @@ from bs4 import BeautifulSoup
 
 # Read the HTML file
 with open("index.html", "r") as file:
-    html_content = file.read()
+    content = file.read()
 
 # Parse the HTML
-soup = BeautifulSoup(html_content, "html.parser")
+soup = BeautifulSoup(content, "html.parser")
 
 # Modify the text
-heading = soup.find("h1")
-if heading:
-    heading.string = "New Heading Text"
 import random
 paragraph = soup.find("p", id="my-paragraph") # Find paragraph by id
 if paragraph:
