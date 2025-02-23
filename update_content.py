@@ -127,9 +127,8 @@ plt.savefig('updatedGraph.png')
 
 
 # Read the HTML file
-with open("index.html", "r") as file:
+with open("index.html", "r",  encoding='utf-8') as file:
     content = file.read()
-
 # Parse the HTML
 soup = BeautifulSoup(content, "html.parser")
 
