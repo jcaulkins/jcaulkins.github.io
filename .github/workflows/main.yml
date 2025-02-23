@@ -1,7 +1,7 @@
 name: Update Website
 
 on: 
-  [push]:
+  push:
 
   schedule:
 
