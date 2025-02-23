@@ -9,9 +9,9 @@ soup = BeautifulSoup(content, "html.parser")
 
 # Modify the text
 import random
-paragraph = soup.find("p", id="my-paragraph") # Find paragraph by id
+paragraph = soup.find("p", id="updating") # Find paragraph by id
 if paragraph:
-    paragraph.string = "New paragraph text" + str(random.randint(1, 227))
+    paragraph.string = "Updating Number = " + str(random.randint(1, 227))
     
 # Save the changes
 with open("index.html", "w") as file:
