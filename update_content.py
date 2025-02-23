@@ -1,39 +1,39 @@
 try:
 	from bs4 import BeautifulSoup
 except ImportError as e: 
-pass
+	pass
 try:
 	!pip install nixtla
 except ImportError as e: 
-pass
+	pass
 try:
 	!pip install pandas_datareader
 except ImportError as e: 
-pass
+	pass
 try:
 	import pandas as pd 
 except ImportError as e: 
-pass
+	pass
 try:
-import pandas_datareader.data as web 
+	import pandas_datareader.data as web 
 except ImportError as e: 
-pass
+	pass
 try:
-import datetime 
+	import datetime 
 except ImportError as e: 
-pass
+	pass
 try:
-from sklearn.model_selection import train_test_split
+	from sklearn.model_selection import train_test_split
 except ImportError as e: 
-pass
+	pass
 try:
-from nixtla import NixtlaClient
+	from nixtla import NixtlaClient
 except ImportError as e: 
-pass
+	pass
 try:
-import dataframe_image as dfi
+	import dataframe_image as dfi
 except ImportError as e: 
-pass
+	pass
 
 
 
