@@ -28,4 +28,4 @@ jobs:
 
     steps:
 
-    - run: echo ./update_daily.sh >> log.txt
+    - run: ./update_daily.sh >> log.txt
