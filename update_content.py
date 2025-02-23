@@ -3,11 +3,15 @@ try:
 except ImportError as e: 
 	pass
 try:
-	!pip install nixtla
+	import subprocess
 except ImportError as e: 
 	pass
 try:
-	!pip install pandas_datareader
+	subprocess.run(["pip", "install", "nixtla"])
+except ImportError as e: 
+	pass
+try:
+	subprocess.run(["pip", "install", "pandas_datareader"])
 except ImportError as e: 
 	pass
 try:
