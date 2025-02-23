@@ -15,6 +15,10 @@ try:
 except ImportError as e: 
 	pass
 try:
+	subprocess.run(["conda", "install", "matplotlib"])
+except ImportError as e: 
+	pass
+try:
 	import pandas as pd 
 except ImportError as e: 
 	pass
