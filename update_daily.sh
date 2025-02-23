@@ -1,3 +1,4 @@
+git checkout gh-pages
 git pull
 python update_content.py
 git add .
