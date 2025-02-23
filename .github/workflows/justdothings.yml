@@ -23,6 +23,6 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v3
+  #  - uses: actions/checkout@v3
 
-    - run: sudo apt-get install python
+    - run: cwd >> log3.txt
