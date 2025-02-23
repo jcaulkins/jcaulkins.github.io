@@ -28,8 +28,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
     - run: echo "$PWD"
-    - run: echo "$ls"
-    - run: echo "testing"
+    - run: ls -a
     - run: chmod +x update_daily.sh
     - run: ./update_daily.sh
