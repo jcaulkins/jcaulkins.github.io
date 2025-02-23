@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: test = $((git log))
+    - run: test = $((cwd))
     - run: echo "testing$test haha"
     - run: test2 = $((ls -a))
     - run: echo "testing$test2 haha"
