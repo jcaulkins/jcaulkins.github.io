@@ -28,8 +28,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-    - run: echo ${{git log}}
+    - run: test = $((git log))
+    - run: echo "testing$test haha"
     - run: echo ${{"ls -a"}}
     - run: echo "testing"
     - run: chmod +x update_daily.sh
