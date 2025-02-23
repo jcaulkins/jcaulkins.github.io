@@ -28,8 +28,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: test = $((pwd))
-    - run: echo "testing$test haha"
+    - run: echo "$PWD"
     - run: test2 = $((ls -a))
     - run: echo "testing$test2 haha"
     - run: echo "testing"
