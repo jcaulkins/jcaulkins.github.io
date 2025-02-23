@@ -1,4 +1,4 @@
 python update_content.py
 git add .
 git commit -m "Automatic website update"
-git push origin HEAD:gh-pages
+git push main
