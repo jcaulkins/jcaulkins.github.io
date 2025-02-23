@@ -1,128 +1,226 @@
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8"/>
-<style>
-    		body {font-family: "noto serif"; font-size: 150%; font-weight: 100; text-align: center; background-color: black}
-    		h2 {font-weight: 200}
-  	</style>
 <head>
-<title>Sibyls of the S&amp;P</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P 500 Market Predictions</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .indicators-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .viz-container {
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: var(--secondary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-            <h2> Sibyls of the S&amp;P<\h2>
-            <h1>Where's the stock market headed? <\h1>
-<p>That’s the question on the tip of everyone’s tongues these days. </p>
- <p> Well, wonder no longer. </p>
- <p> Using key economic indicators, we've predicted the S&amp;P 500 index for the next 30 days.</p>
-<p id="updating">Updating Number = 134</p>
-<!-- predictions -->
+    <header>
+        <div class="container">
+            <h1>S&P 500 Market Predictions</h1>
+            <p class="subtitle">Analyzing market trends through key economic indicators for the next 30 days</p>
+        </div>
+    </header>
 
-<div class="tableauPlaceholder" id="viz1740279711460" style="position: relative">
-<noscript>
-<a href="#"> <img alt="Sheet 1" src="https://public.tableau.com/static/images/fo/forecasting_17402797009370/Sheet1/1_rss.png" style="border: none"/>
-</a>
-</noscript>
-<object class="tableauViz" style="display: none;">
-<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-<param name="embed_code_version" value="3"/>
-<param name="site_root" value=""/>
-<param name="name" value="forecasting_17402797009370/Sheet1"/>
-<param name="tabs" value="no"/>
-<param name="toolbar" value="yes"/>
-<param name="static_image" value="https://public.tableau.com/static/images/fo/forecasting_17402797009370/Sheet1/1.png"/>
-<param name="animate_transition" value="yes"/>
-<param name="display_static_image" value="yes"/>
-<param name="display_spinner" value="yes"/>
-<param name="display_overlay" value="yes"/>
-<param name="display_count" value="yes"/>
-<param name="language" value="en-US"/>
-<param name="filter" value="publish=yes"/>
-</object>
-</div>
-<script type="text/javascript">
-    var divElement = document.getElementById("viz1740279711460");
-    var vizElement = divElement.getElementsByTagName("object")[0];
-    vizElement.style.width = "100%";
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + "px";
-    
-    var scriptElement = document.createElement("script");
-    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-<!-- test//forecasting -->
-<div class="tableauPlaceholder" id="viz1740280023154" style="position: relative">
-<noscript>
-<a href="#">
-<img alt="Sheet 1" src="https://public.tableau.com/static/images/te/testfcst/Sheet1/1_rss.png" style="border: none"/>
-</a>
-</noscript>
-<object class="tableauViz" style="display: none;">
-<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-<param name="embed_code_version" value="3"/>
-<param name="site_root" value=""/>
-<param name="name" value="testfcst/Sheet1"/>
-<param name="tabs" value="no"/>
-<param name="toolbar" value="yes"/>
-<param name="static_image" value="https://public.tableau.com/static/images/te/testfcst/Sheet1/1.png"/>
-<param name="animate_transition" value="yes"/>
-<param name="display_static_image" value="yes"/>
-<param name="display_spinner" value="yes"/>
-<param name="display_overlay" value="yes"/>
-<param name="display_count" value="yes"/>
-<param name="language" value="en-US"/>
-<param name="filter" value="publish=yes"/>
-</object>
-</div>
-<script type="text/javascript">
-    var divElement = document.getElementById("viz1740280023154");
-    var vizElement = divElement.getElementsByTagName("object")[0];
-    vizElement.style.width = "100%";
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + "px";
+    <main class="container">
+        <section class="indicators-section">
+            <h2>Key Economic Indicators Used:</h2>
+            <ul>
+                <li>Gross Domestic Product (GDP)</li>
+                <li>S&P 500 Index Historical Data</li>
+                <li>Unemployment Rates</li>
+                <li>Consumer Price Index (CPI)</li>
+                <li>Federal Funds Effective Rate</li>
+                <li>Industrial Production</li>
+                <li>Advance Retail Sales</li>
+            </ul>
+        </section>
 
-    var scriptElement = document.createElement("script");
-    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-<!-- test/sp500 -->
-<div class="tableauPlaceholder" id="viz1740280156606" style="position: relative">
-<noscript>
-<a href="#">
-<img alt="Sheet 1" src="https://public.tableau.com/static/images/te/test2sp500/Sheet1/1_rss.png" style="border: none"/>
-</a>
-</noscript>
-<object class="tableauViz" style="display: none;">
-<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-<param name="embed_code_version" value="3"/>
-<param name="site_root" value=""/>
-<param name="name" value="test2sp500/Sheet1"/>
-<param name="tabs" value="no"/>
-<param name="toolbar" value="yes"/>
-<param name="static_image" value="https://public.tableau.com/static/images/te/test2sp500/Sheet1/1.png"/>
-<param name="animate_transition" value="yes"/>
-<param name="display_static_image" value="yes"/>
-<param name="display_spinner" value="yes"/>
-<param name="display_overlay" value="yes"/>
-<param name="display_count" value="yes"/>
-<param name="language" value="en-US"/>
-<param name="filter" value="publish=yes"/>
-</object>
-</div>
-<script type="text/javascript">
-    var divElement = document.getElementById("viz1740280156606");
-    var vizElement = divElement.getElementsByTagName("object")[0];
-    vizElement.style.width = "100%";
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + "px";
+        <div class="viz-container">
+            <div class="tableauPlaceholder" id="viz1740279711460" style="position: relative">
+                <noscript>
+                    <a href="#">
+                        <img alt="Sheet 1" src="https://public.tableau.com/static/images/fo/forecasting_17402797009370/Sheet1/1_rss.png" style="border: none"/>
+                    </a>
+                </noscript>
+                <object class="tableauViz" style="display: none;">
+                    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+                    <param name="embed_code_version" value="3"/>
+                    <param name="site_root" value=""/>
+                    <param name="name" value="forecasting_17402797009370/Sheet1"/>
+                    <param name="tabs" value="no"/>
+                    <param name="toolbar" value="yes"/>
+                    <param name="static_image" value="https://public.tableau.com/static/images/fo/forecasting_17402797009370/Sheet1/1.png"/>
+                    <param name="animate_transition" value="yes"/>
+                    <param name="display_static_image" value="yes"/>
+                    <param name="display_spinner" value="yes"/>
+                    <param name="display_overlay" value="yes"/>
+                    <param name="display_count" value="yes"/>
+                    <param name="language" value="en-US"/>
+                    <param name="filter" value="publish=yes"/>
+                </object>
+            </div>
+        </div>
 
-    var scriptElement = document.createElement("script");
-    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+        <div class="viz-container">
+            <div class="tableauPlaceholder" id="viz1740280023154" style="position: relative">
+                <noscript>
+                    <a href="#">
+                        <img alt="Sheet 1" src="https://public.tableau.com/static/images/te/testfcst/Sheet1/1_rss.png" style="border: none"/>
+                    </a>
+                </noscript>
+                <object class="tableauViz" style="display: none;">
+                    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+                    <param name="embed_code_version" value="3"/>
+                    <param name="site_root" value=""/>
+                    <param name="name" value="testfcst/Sheet1"/>
+                    <param name="tabs" value="no"/>
+                    <param name="toolbar" value="yes"/>
+                    <param name="static_image" value="https://public.tableau.com/static/images/te/testfcst/Sheet1/1.png"/>
+                    <param name="animate_transition" value="yes"/>
+                    <param name="display_static_image" value="yes"/>
+                    <param name="display_spinner" value="yes"/>
+                    <param name="display_overlay" value="yes"/>
+                    <param name="display_count" value="yes"/>
+                    <param name="language" value="en-US"/>
+                    <param name="filter" value="publish=yes"/>
+                </object>
+            </div>
+        </div>
 
-	<!-- auto updating -->
+        <div class="viz-container">
+            <div class="tableauPlaceholder" id="viz1740280156606" style="position: relative">
+                <noscript>
+                    <a href="#">
+                        <img alt="Sheet 1" src="https://public.tableau.com/static/images/te/test2sp500/Sheet1/1_rss.png" style="border: none"/>
+                    </a>
+                </noscript>
+                <object class="tableauViz" style="display: none;">
+                    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+                    <param name="embed_code_version" value="3"/>
+                    <param name="site_root" value=""/>
+                    <param name="name" value="test2sp500/Sheet1"/>
+                    <param name="tabs" value="no"/>
+                    <param name="toolbar" value="yes"/>
+                    <param name="static_image" value="https://public.tableau.com/static/images/te/test2sp500/Sheet1/1.png"/>
+                    <param name="animate_transition" value="yes"/>
+                    <param name="display_static_image" value="yes"/>
+                    <param name="display_spinner" value="yes"/>
+                    <param name="display_overlay" value="yes"/>
+                    <param name="display_count" value="yes"/>
+                    <param name="language" value="en-US"/>
+                    <param name="filter" value="publish=yes"/>
+                </object>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Data visualizations powered by Tableau Public</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function initViz(elementId) {
+            var divElement = document.getElementById(elementId);
+            var vizElement = divElement.getElementsByTagName("object")[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + "px";
+            
+            var scriptElement = document.createElement("script");
+            scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        }
+
+        // Initialize all visualizations
+        window.onload = function() {
+            initViz("viz1740279711460");
+            initViz("viz1740280023154");
+            initViz("viz1740280156606");
+        };
+    </script>
+	
+<!-- auto updating -->
 
 		<h2>Daily Updating Graphs:</h2>
 			<img id=”rtgraph”></img>
 			<img id=”rttable”></img>
-
 </body>
 <!-- Gross Domestic Product, the S&amp;P 500 Index, unemployment rates, the consumer price index, the federal funds effective rate, industrial production, and advance retail sales. All key economic indicators as to the health of an economy. We used these economic indicators to forecast the S&amp;P 500 index for the next 30 days. -->
 </html>
