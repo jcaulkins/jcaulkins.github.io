@@ -15,7 +15,7 @@ try:
 except ImportError as e: 
 	pass
 try:
-	subprocess.run(["conda", "install", "matplotlib"])
+	subprocess.run(["pip", "install", "matplotlib"])
 except ImportError as e: 
 	pass
 try:
@@ -92,7 +92,7 @@ sp500_prediction.rename(columns={'TimeGPT':'SP500'}, inplace=True)
 
 
 
-import matplotlib. pyplot as plt
+import matplotlib.pyplot as plt
 
 #fcst_train
 plt.figure(figsize=(14, 7))
