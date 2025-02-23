@@ -1,4 +1,4 @@
-name: Update Website
+oname: Update Website
 
 
 
@@ -32,4 +32,4 @@ jobs:
 
     - uses: actions/checkout@v3
 
-    - run: ./update_daily.sh >> log.txt
+    - run: echo ./update_daily.sh >> log.txt
