@@ -29,8 +29,8 @@ jobs:
 
     steps:
 
-    - run: echo 'git log'
-    - run: echo "ls -a"
+    - run: echo ${{git log}}
+    - run: echo ${{"ls -a"}}
     - run: echo "testing"
     - run: chmod +x update_daily.sh
     - run: ./update_daily.sh
