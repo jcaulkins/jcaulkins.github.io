@@ -138,11 +138,11 @@ import random
 
 graphy = soup.find("img", id="rtgraph") # Find paragraph by id
 if graphy:
-    graphy.src = "updatedGraph.png"
+    graphy['src'] = "updatedGraph.png"
 
 tabley = soup.find("img", id="rttable") # Find paragraph by id
 if tabley:
-    tabley.src = "updatedTable.png"
+    tabley['src'] = "updatedTable.png"
 
 paragraph = soup.find("p", id="updating") # Find paragraph by id
 if paragraph:
