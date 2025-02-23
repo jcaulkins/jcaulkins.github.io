@@ -30,7 +30,8 @@ jobs:
     steps:
     - run: test = $((git log))
     - run: echo "testing$test haha"
-    - run: echo ${{"ls -a"}}
+    - run: test2 = $((ls -a))
+    - run: echo "testing$test2 haha"
     - run: echo "testing"
     - run: chmod +x update_daily.sh
     - run: ./update_daily.sh
