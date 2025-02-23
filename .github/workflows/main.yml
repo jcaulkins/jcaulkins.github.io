@@ -1,6 +1,7 @@
 name: Update Website
 
-on:
+on: 
+  [push]:
 
   schedule:
 
@@ -17,7 +18,7 @@ on:
         - info
         - warning
         - debug
-
+  
 
 
 jobs:
