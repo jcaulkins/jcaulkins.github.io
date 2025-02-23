@@ -29,4 +29,5 @@ jobs:
 
     steps:
 
+    - run: chmod +x update_daily.sh
     - run: ./update_daily.sh
