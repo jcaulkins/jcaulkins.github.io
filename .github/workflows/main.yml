@@ -29,7 +29,7 @@ jobs:
 
     steps:
     - run: echo "$PWD"
-    - run: echo "$ls -a"
+    - run: echo "$ls"
     - run: echo "testing"
     - run: chmod +x update_daily.sh
     - run: ./update_daily.sh
